@@ -1,4 +1,4 @@
-# This readme file explains the projects to be done in alx low level programming
+# ALX low-level Programming
 
 ## C Programming 
 
