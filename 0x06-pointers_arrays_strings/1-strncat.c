@@ -4,7 +4,7 @@
  * _strncat - concatenate two strings
  * @dest: char pointer string
  * @src: char pointer string
- * @n: number of elements to concatenate 
+ * @n: number of elements to concatenate
  * Return: pointer to resulting `dest`
  */
 
