@@ -2,7 +2,7 @@
 
 /**
  * string_toupper - Change all lowercase letters to uppercase
- * @c: int pointer string variable 
+ * @c: int pointer string variable
  * Return: c
  */
 
