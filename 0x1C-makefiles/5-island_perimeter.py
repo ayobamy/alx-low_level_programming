@@ -3,10 +3,11 @@
 Defines an island perimeter
 """
 
+
 def island_perimeter(grid):
     """
     Returns the island perimeter of a grid
-  
+
     grid is a list of list of integers:
         0 represents a water zone
         1 represents a land zone
@@ -24,7 +25,8 @@ def island_perimeter(grid):
         for n in range(width):
             if(grid[m][n] == 1):
                 grid_size += 1
-                if ((n > 0 and grid[m][n - 1] == 1) or (m > 0 and grid[m - 1][n] == 1)):
+                if (n > 0 and grid[m][n - 1] == 1):
+                    grid_edges += 1
+                if (m > 0 and grid[m - 1][n] == 1):
                     grid_edges += 1
     return (grid_size * 4 - grid_edges * 2)
-
