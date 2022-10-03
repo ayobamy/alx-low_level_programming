@@ -11,25 +11,20 @@
 
 int linear_search(int *array, size_t size, int value)
 {
-	// delcare a variable of size_t to loop the array
 	size_t i;
 
-	// check if the array is empty(NULL)
 	if (array == NULL)
 	{
-		return -1;
+		return (-1);
 	}
 
-	// loop through the array sequentially and compare them
-	for (i = 0; i < size; i++) 
+	for (i = 0; i < size; i++)
 	{
-		// print out the value at each index when comparing
 		printf("Value checked array[%ld] = %d\n", i, array[i]);
 
-		// check if the array is equal to the value at index i
 		if (array[i] == value)
 		{
-			return i;
+			return (i);
 		}
 	}
 
