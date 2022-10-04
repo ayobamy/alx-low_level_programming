@@ -11,24 +11,25 @@
 
 int jump_search(int *array, size_t size, int value)
 {
-	size_t i, step, prev, end;
+	size_t i, step, prev;
 	step = sqrt(size);
 
 	prev = 0;
-    end = size - 1;
 
 	if (array == NULL || size == 0)
 		return (-1);
 
-	while (array[min(step, end)] < value)
+	while (array[step] <= value && step < size)
 	{
 		prev = step;
-        step += sqrt(size);
-
-		if (prev >= size)
-			return (-1);
+		step += sqrt(size);
 	}
 
+	for (i = prev; i < size; i++)
+	{
+        if (array[i] == value)
+			return (i);
+	}
 
 	return (-1);
 }
