@@ -40,7 +40,7 @@ int jump_search(int *array, size_t size, int value)
 
 	for (l = 0; l < size; l++)
 	{
-        if (array[l] == value)
+		if (array[l] == value)
 			return (l);
 	}
 
