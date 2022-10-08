@@ -7,4 +7,5 @@
 <li>Jump Search</li>
 <li>Interpolation Search</li>
 <li>Exponential Search</li>
+<li>Advanced Binary Search</li>
 </ol>
