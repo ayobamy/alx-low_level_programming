@@ -5,4 +5,5 @@
 <li>Linear Search</li>
 <li>Binary Search</li>
 <li>Jump Search</li>
+<li>Interpolation Search</li>
 </ol>
